@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Response Headers</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: black;
+            color: green;
+        }
+        h1 {
+            color: #00ff00;
+            margin-top: 60px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"] {
+            padding: 8px;
+        }
+        input[type="submit"] {
+            padding: 8px;
+            background-color: #000;
+            color: #00ff00;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter a domain name to get response headers</h1>
+    <form method="POST" action="/get_headers">
+        <label for="domain">Domain Name: </label>
+        <input type="text" name="domain" id="domain" required>
+        <input type="submit" value="Get Headers">
+    </form>
+</body>
+</html>
